@@ -1,4 +1,4 @@
-from flask import Blueprint, redirect, render_template, url_for, request, flash
+from flask import Blueprint, redirect, render_template, session, url_for, request, flash, abort
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, logout_user, login_required
 from App.models import User
@@ -54,3 +54,18 @@ def signup_post():
 def logout():
     logout_user()
     return redirect(url_for('main.index'))
+
+
+@auth.route('/callback')
+def callback():
+    pass
+
+
+def login_is_required(function):
+    def wrapper(*args, **kwargs):
+        if "google_id" not in session:
+            return abort(401)
+        else:
+            return function()
+    return wrapper
+
