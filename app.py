@@ -1,5 +1,6 @@
 from App import app
 from flask_socketio import SocketIO, send
+import os
 
 socketio = SocketIO(app, cors_allowed_origins='*')
 
@@ -10,5 +11,8 @@ def handle_message(message):
         send(message, broadcast=True)
 
 
+
 if __name__ == '__main__':
-    socketio.run(app, host='0.0.0.0', port=5000 , debug=True)
+    # os.environ['FLASK_ENV'] = 'development'
+    os.environ['FLASK_ENV'] = 'production'
+    socketio.run(app)

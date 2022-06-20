@@ -1,20 +1,26 @@
 from flask import Flask, jsonify, make_response
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
+from config import config
+import psycopg2
+import logging
+import os
 
+logging.basicConfig(level=logging.DEBUG,
+                   format='[%(asctime)s]: {} %(levelname)s %(message)s'.format(os.getpid()),
+                   datefmt='%Y-%m-%d %H:%M:%S',
+                   handlers=[logging.StreamHandler()])
+
+logger = logging.getLogger()
 
 db = SQLAlchemy()
 
 def create_app():
+    logger.info(f'Starting app in {config.APP_ENV} environment')
     app = Flask(__name__)
-    
-    app.config['SECRET_KEY'] = 'mykey'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
-    
-
+    app.config.from_object('config')
     
     db.init_app(app)
-    
     
     login_manager = LoginManager()
     login_manager.login_view = 'auth.login'
