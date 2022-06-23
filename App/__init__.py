@@ -108,7 +108,7 @@ def after_request(response):
     appinsights.flush()
     return response
 
-@app.route("/")
+@app.route("/coco")
 def hello():
     app.logger.debug('This is a debug log message')
     app.logger.info('This is an information log message')
