@@ -46,8 +46,8 @@ def create_app():
     from App.routes.main import main as main_blueprint
     app.register_blueprint(main_blueprint)
     
-    from App.routes.article import article as article_blueprint
-    app.register_blueprint(article_blueprint)
+    # from App.routes.article import article as article_blueprint
+    # app.register_blueprint(article_blueprint)
     
     return app
 
