@@ -15,6 +15,7 @@ class DevConfig(BaseConfig):
    SQLALCHEMY_DATABASE_URI = 'sqlite:///db.sqlite3'
    SECRET_KEY = 'myclefsecret'
    SQLALCHEMY_TRACK_MODIFICATIONS = True
+   APPINSIGHTS_INSTRUMENTATIONKEY = os.getenv("APPINSIGHTS_INSTRUMENTATIONKEY")
 
 
 class ProductionConfig(BaseConfig):
@@ -22,7 +23,7 @@ class ProductionConfig(BaseConfig):
    SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL").replace('postgres://','postgresql://')
    SQLALCHEMY_TRACK_MODIFICATIONS = False
    SECRET_KEY = 'myclefsecret'
-
+   APPINSIGHTS_INSTRUMENTATIONKEY = os.getenv("APPINSIGHTS_INSTRUMENTATIONKEY")
 
 class TestConfig(BaseConfig):
    FLASK_ENV = 'development'

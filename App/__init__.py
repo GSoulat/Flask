@@ -100,7 +100,7 @@ app = create_app()
 #     """Return a http 500 error to client"""
 #     return render_template('error.html')
 
-app.config['APPINSIGHTS_INSTRUMENTATIONKEY'] = 'YOUR_INSTRUMENTATION_KEY'
+app.config['APPINSIGHTS_INSTRUMENTATIONKEY'] = 'APPINSIGHTS_INSTRUMENTATIONKEY'
 appinsights = AppInsights(app)
 
 @app.after_request
