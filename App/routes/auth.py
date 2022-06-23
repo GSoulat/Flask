@@ -1,10 +1,15 @@
 from flask import Blueprint, redirect, render_template, session, url_for, request, flash, abort
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, logout_user, login_required
-from App.models import User
+from App.models.user import User
 from App import db
+import re
 
 auth = Blueprint('auth', __name__, static_folder='/App/static', template_folder='App/templates')
+
+# Make a regular expression
+# for validating an Email
+regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 
 @auth.route('/login')
 def login():
@@ -15,6 +20,13 @@ def login_post():
     email = request.form.get('email')
     password = request.form.get('password')
     remember = True if request.form.get('remember') else False
+    
+    if(re.fullmatch(regex, email)):
+        print("Valid Email")
+    else:
+        print("Invalid Email")
+        flash('Email is not a email adress.')
+        return redirect(url_for('auth.login'))
 
     user = User.query.filter_by(email=email).first()
 
@@ -36,6 +48,14 @@ def signup_post():
     name = request.form.get('name')
     password = request.form.get('password')
 
+    if(re.fullmatch(regex, email)):
+        print("Valid Email")
+    else:
+        print("Invalid Email")
+        flash('Email is not a email adress.')
+        return redirect(url_for('auth.signup'))
+    
+    
     user = User.query.filter_by(email=email).first()
 
     if user:
@@ -68,4 +88,3 @@ def login_is_required(function):
         else:
             return function()
     return wrapper
-

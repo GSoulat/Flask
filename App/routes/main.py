@@ -14,3 +14,10 @@ def profile():
     print(current_user.name)
     
     return render_template('profile.html', name=current_user.name)
+
+
+@main.route('/list_users')
+def list_users():
+    print(current_user.name)
+    
+    return render_template('profile.html', name=current_user.name)

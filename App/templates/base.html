@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <section class="hero is-primary is-fullheight">
+    <section class="hero is-dark is-fullheight">
 
         <div class="hero-head">
             <nav class="navbar">
@@ -24,6 +24,9 @@
                             {% if current_user.is_authenticated %}
                             <a href="{{ url_for('main.profile') }}" class="navbar-item">
                                 Profile
+                            </a>
+                            <a href="{{ url_for('main.list_users') }}" class="navbar-item">
+                                Utilisateurs
                             </a>
                             {% endif %}
                             {% if not current_user.is_authenticated %}
