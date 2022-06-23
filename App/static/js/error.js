@@ -2,7 +2,7 @@ randError =
 	(Math.floor(Math.random() * 2) + 4) * 100 + Math.floor(Math.random() * 5);
 randNumber = Math.floor(Math.random() * 10000);
 
-urlSearch = "?error=" + randError + "&url=https://127.0.0.1:5000/" + randNumber;
+urlSearch = "&url=https://127.0.0.1:8000/";
 
 const params = new URLSearchParams(urlSearch);
 const errorData = [

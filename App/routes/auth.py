@@ -4,6 +4,8 @@ from flask_login import login_user, logout_user, login_required
 from App.models.user import User
 from App import db
 import re
+# import cloudinary.uploader
+
 
 auth = Blueprint('auth', __name__, static_folder='/App/static', template_folder='App/templates')
 
@@ -23,16 +25,19 @@ def login_post():
     
     if(re.fullmatch(regex, email)):
         print("Valid Email")
+        print(email)
     else:
         print("Invalid Email")
         flash('Email is not a email adress.')
         return redirect(url_for('auth.login'))
 
     user = User.query.filter_by(email=email).first()
-
+    print('----------------------------------------------')
+    print(user)
     if not user and not check_password_hash(user.password, password):
         flash('Please check your login details and try again.')
         return redirect(url_for('auth.login'))
+    print('----------------------------------------------')
 
     login_user(user, remember=remember)
 
@@ -45,8 +50,11 @@ def signup():
 @auth.route('/signup', methods=['POST'])
 def signup_post():
     email = request.form.get('email')
-    name = request.form.get('name')
+    firstname = request.form.get('firstname')
+    lastname = request.form.get('lastname')
     password = request.form.get('password')
+    work = request.form.get('lastname')
+    github = request.form.get('password')
 
     if(re.fullmatch(regex, email)):
         print("Valid Email")
@@ -61,8 +69,16 @@ def signup_post():
     if user:
         flash('Email address already exists.')
         return redirect(url_for('auth.signup'))
+    
+    #   file_to_upload = request.files.get('profil')
+    #     if file_to_upload:
+    #         print('file to upload')
+    #         upload_result = cloudinary.uploader.upload(file_to_upload)
+    #         app.logger.info(upload_result)
+    #         current_user.filename = upload_result['secure_url']
 
-    new_user = User(email=email, name=name, password=generate_password_hash(password, method='sha256'))
+
+    new_user = User(email=email, firstname=firstname,lastname=lastname, work=work, github=github, password=generate_password_hash(password, method='sha256'))
 
     db.session.add(new_user)
     db.session.commit()
