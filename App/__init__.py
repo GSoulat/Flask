@@ -12,10 +12,10 @@ import logging as lg
 import os
 from applicationinsights.flask.ext import AppInsights
 
-# lg.basicConfig(level=lg.DEBUG,
-#                    format='[%(asctime)s]: {} %(levelname)s %(message)s'.format(os.getpid()),
-#                    datefmt='%Y-%m-%d %H:%M:%S',
-#                    handlers=[lg.StreamHandler(), lg.FileHandler(filename='error.log')])
+lg.basicConfig(level=lg.DEBUG,
+                   format='[%(asctime)s]: {} %(levelname)s %(message)s'.format(os.getpid()),
+                   datefmt='%Y-%m-%d %H:%M:%S',
+                   handlers=[lg.StreamHandler(), lg.FileHandler(filename='error.log')])
 
 logger = lg.getLogger()
 
@@ -99,6 +99,7 @@ app = create_app()
 # def handle_500_error(_error):
 #     """Return a http 500 error to client"""
 #     return render_template('error.html')
+
 
 appinsights = AppInsights(app)
 

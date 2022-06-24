@@ -28,3 +28,364 @@
 [2022-06-23 23:10:47]: 30176 INFO 127.0.0.1 - - [23/Jun/2022 23:10:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
 [2022-06-23 23:10:47]: 30176 INFO 127.0.0.1 - - [23/Jun/2022 23:10:47] "GET /signup HTTP/1.1" 200 -
 [2022-06-23 23:10:47]: 30176 INFO 127.0.0.1 - - [23/Jun/2022 23:10:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2022-06-24 08:29:23]: 33352 INFO Starting app in Dev environment
+[2022-06-24 08:29:24]: 33352 WARNING Failed to integrate module: opencensus.ext.logging.trace
+[2022-06-24 08:29:24]: 33352 WARNING No module named 'opencensus.ext.logging'
+[2022-06-24 08:29:24]: 33352 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 08:29:24]: 33352 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 08:29:24]: 33352 DEBUG Starting new HTTP connection (1): 169.254.169.254:80
+[2022-06-24 08:29:24]: 33352 DEBUG Starting new HTTPS connection (1): westus-0.in.applicationinsights.azure.com:443
+[2022-06-24 08:29:24]: 33352 DEBUG https://westus-0.in.applicationinsights.azure.com:443 "POST //v2.1/track HTTP/1.1" 200 49
+[2022-06-24 08:29:24]: 33352 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 08:29:24]: 33352 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 08:29:24]: 33352 INFO  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.17.9.20:8000 (Press CTRL+C to quit)
+[2022-06-24 08:29:24]: 33352 INFO  * Restarting with stat
+[2022-06-24 08:29:26]: 22540 INFO Starting app in Dev environment
+[2022-06-24 08:29:27]: 22540 WARNING Failed to integrate module: opencensus.ext.logging.trace
+[2022-06-24 08:29:27]: 22540 WARNING No module named 'opencensus.ext.logging'
+[2022-06-24 08:29:27]: 22540 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 08:29:27]: 22540 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 08:29:27]: 22540 DEBUG Starting new HTTP connection (1): 169.254.169.254:80
+[2022-06-24 08:29:27]: 22540 DEBUG Starting new HTTPS connection (1): westus-0.in.applicationinsights.azure.com:443
+[2022-06-24 08:29:27]: 22540 DEBUG https://westus-0.in.applicationinsights.azure.com:443 "POST //v2.1/track HTTP/1.1" 200 49
+[2022-06-24 08:29:27]: 22540 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 08:29:27]: 22540 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 08:29:27]: 22540 WARNING  * Debugger is active!
+[2022-06-24 08:29:27]: 22540 INFO  * Debugger PIN: 236-355-132
+[2022-06-24 08:30:40]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:30:40] "GET / HTTP/1.1" 200 -
+[2022-06-24 08:30:44]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:30:44] "GET /profile HTTP/1.1" 200 -
+[2022-06-24 08:30:44]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:30:44] "[36mGET /static/css/profil.css HTTP/1.1[0m" 304 -
+[2022-06-24 08:31:07]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:31:07] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2022-06-24 08:31:07]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:31:07] "GET / HTTP/1.1" 200 -
+[2022-06-24 08:31:09]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:31:09] "GET /login HTTP/1.1" 200 -
+[2022-06-24 08:31:10]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:31:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2022-06-24 08:31:10]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:31:10] "GET /profile HTTP/1.1" 200 -
+[2022-06-24 08:31:10]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:31:10] "[36mGET /static/css/profil.css HTTP/1.1[0m" 304 -
+[2022-06-24 08:32:52]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:32:52] "[32mGET /logout HTTP/1.1[0m" 302 -
+[2022-06-24 08:32:52]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:32:52] "GET / HTTP/1.1" 200 -
+[2022-06-24 08:32:54]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:32:54] "GET /signup HTTP/1.1" 200 -
+[2022-06-24 08:33:02]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:33:02] "[32mPOST /signup HTTP/1.1[0m" 302 -
+[2022-06-24 08:33:02]: 22540 INFO 127.0.0.1 - - [24/Jun/2022 08:33:02] "GET /login HTTP/1.1" 200 -
+[2022-06-24 08:33:50]: 22540 INFO  * Detected change in 'c:\\Users\\gsoul\\Documents\\PYTHON\\FLASK\\App\\routes\\main.py', reloading
+[2022-06-24 08:33:50]: 33352 INFO  * Restarting with stat
+[2022-06-24 08:33:51]: 14928 INFO Starting app in Dev environment
+[2022-06-24 08:33:51]: 14928 WARNING Failed to integrate module: opencensus.ext.logging.trace
+[2022-06-24 08:33:51]: 14928 WARNING No module named 'opencensus.ext.logging'
+[2022-06-24 08:33:51]: 14928 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 08:33:51]: 14928 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 08:33:51]: 14928 DEBUG Starting new HTTP connection (1): 169.254.169.254:80
+[2022-06-24 08:33:51]: 14928 DEBUG Starting new HTTPS connection (1): westus-0.in.applicationinsights.azure.com:443
+[2022-06-24 08:33:52]: 14928 DEBUG https://westus-0.in.applicationinsights.azure.com:443 "POST //v2.1/track HTTP/1.1" 200 49
+[2022-06-24 08:33:52]: 14928 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 08:33:52]: 14928 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 08:33:52]: 14928 WARNING  * Debugger is active!
+[2022-06-24 08:33:52]: 14928 INFO  * Debugger PIN: 236-355-132
+[2022-06-24 08:34:05]: 14928 DEBUG This is a debug log message
+[2022-06-24 08:34:06]: 14928 INFO This is an information log message
+[2022-06-24 08:34:06]: 14928 WARNING This is a warning log message
+[2022-06-24 08:34:06]: 14928 ERROR This is an error message
+[2022-06-24 08:34:06]: 14928 CRITICAL This is a critical message
+[2022-06-24 08:34:06]: 14928 INFO 127.0.0.1 - - [24/Jun/2022 08:34:06] "GET /coco HTTP/1.1" 200 -
+[2022-06-24 08:34:37]: 14928 WARNING Before the span
+[2022-06-24 08:34:37]: 14928 WARNING In the span
+[2022-06-24 08:34:37]: 14928 WARNING After the span
+[2022-06-24 08:34:37]: 14928 INFO 127.0.0.1 - - [24/Jun/2022 08:34:37] "GET / HTTP/1.1" 200 -
+[2022-06-24 08:34:49]: 14928 INFO 127.0.0.1 - - [24/Jun/2022 08:34:49] "GET /login HTTP/1.1" 200 -
+[2022-06-24 08:34:51]: 14928 INFO 127.0.0.1 - - [24/Jun/2022 08:34:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2022-06-24 08:34:51]: 14928 WARNING Before the span
+[2022-06-24 08:34:51]: 14928 WARNING In the span
+[2022-06-24 08:34:51]: 14928 WARNING After the span
+[2022-06-24 08:34:51]: 14928 INFO 127.0.0.1 - - [24/Jun/2022 08:34:51] "GET /profile HTTP/1.1" 200 -
+[2022-06-24 08:34:51]: 14928 INFO 127.0.0.1 - - [24/Jun/2022 08:34:51] "[36mGET /static/css/profil.css HTTP/1.1[0m" 304 -
+[2022-06-24 08:34:51]: 14928 ERROR Unhandled exception from exporter.
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 440, in format
+    return self._format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 436, in _format
+    return self._fmt % values
+KeyError: 'traceId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 154, in run
+    dst._export(batch)
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 77, in _export
+    envelopes = [self.log_record_to_envelope(x) for x in batch]
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 77, in <listcomp>
+    envelopes = [self.log_record_to_envelope(x) for x in batch]
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 239, in log_record_to_envelope
+    message=self.format(record),
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 943, in format
+    return fmt.format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 681, in format
+    s = self.formatMessage(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 650, in formatMessage
+    return self._style.format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 442, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'traceId'
+[2022-06-24 08:34:52]: 14928 DEBUG Starting new HTTPS connection (1): dc.services.visualstudio.com:443
+[2022-06-24 08:34:52]: 14928 DEBUG https://dc.services.visualstudio.com:443 "POST /v2.1/track HTTP/1.1" 307 400
+[2022-06-24 08:34:52]: 14928 DEBUG Starting new HTTPS connection (1): francecentral-1.in.applicationinsights.azure.com:443
+[2022-06-24 08:34:54]: 14928 DEBUG https://francecentral-1.in.applicationinsights.azure.com:443 "POST /v2.1/track HTTP/1.1" 200 49
+[2022-06-24 08:34:54]: 14928 WARNING Before the span
+[2022-06-24 08:34:54]: 14928 WARNING In the span
+[2022-06-24 08:34:54]: 14928 WARNING After the span
+[2022-06-24 08:34:54]: 14928 INFO 127.0.0.1 - - [24/Jun/2022 08:34:54] "GET /profile HTTP/1.1" 200 -
+[2022-06-24 08:34:54]: 14928 INFO 127.0.0.1 - - [24/Jun/2022 08:34:54] "[36mGET /static/css/profil.css HTTP/1.1[0m" 304 -
+[2022-06-24 08:35:06]: 14928 ERROR Unhandled exception from exporter.
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 440, in format
+    return self._format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 436, in _format
+    return self._fmt % values
+KeyError: 'traceId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 154, in run
+    dst._export(batch)
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 77, in _export
+    envelopes = [self.log_record_to_envelope(x) for x in batch]
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 77, in <listcomp>
+    envelopes = [self.log_record_to_envelope(x) for x in batch]
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 239, in log_record_to_envelope
+    message=self.format(record),
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 943, in format
+    return fmt.format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 681, in format
+    s = self.formatMessage(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 650, in formatMessage
+    return self._style.format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 442, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'traceId'
+[2022-06-24 08:35:09]: 14928 DEBUG Starting new HTTPS connection (1): francecentral-1.in.applicationinsights.azure.com:443
+[2022-06-24 08:35:09]: 14928 DEBUG https://francecentral-1.in.applicationinsights.azure.com:443 "POST /v2.1/track HTTP/1.1" 200 49
+[2022-06-24 09:02:55]: 27476 INFO Starting app in Dev environment
+[2022-06-24 09:02:55]: 27476 WARNING Failed to integrate module: opencensus.ext.logging.trace
+[2022-06-24 09:02:55]: 27476 WARNING No module named 'opencensus.ext.logging'
+[2022-06-24 09:02:55]: 27476 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:02:55]: 27476 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:02:55]: 27476 DEBUG Starting new HTTP connection (1): 169.254.169.254:80
+[2022-06-24 09:02:55]: 27476 DEBUG Starting new HTTPS connection (1): westus-0.in.applicationinsights.azure.com:443
+[2022-06-24 09:02:56]: 27476 DEBUG https://westus-0.in.applicationinsights.azure.com:443 "POST //v2.1/track HTTP/1.1" 200 49
+[2022-06-24 09:02:56]: 27476 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:02:56]: 27476 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:02:56]: 27476 INFO  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.17.9.20:8000 (Press CTRL+C to quit)
+[2022-06-24 09:02:56]: 27476 INFO  * Restarting with stat
+[2022-06-24 09:02:57]: 31796 INFO Starting app in Dev environment
+[2022-06-24 09:02:57]: 31796 WARNING Failed to integrate module: opencensus.ext.logging.trace
+[2022-06-24 09:02:57]: 31796 WARNING No module named 'opencensus.ext.logging'
+[2022-06-24 09:02:57]: 31796 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:02:57]: 31796 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:02:57]: 31796 DEBUG Starting new HTTP connection (1): 169.254.169.254:80
+[2022-06-24 09:02:57]: 31796 DEBUG Starting new HTTPS connection (1): westus-0.in.applicationinsights.azure.com:443
+[2022-06-24 09:02:58]: 31796 DEBUG https://westus-0.in.applicationinsights.azure.com:443 "POST //v2.1/track HTTP/1.1" 200 49
+[2022-06-24 09:02:58]: 31796 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:02:58]: 31796 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:02:58]: 31796 WARNING  * Debugger is active!
+[2022-06-24 09:02:58]: 31796 INFO  * Debugger PIN: 236-355-132
+[2022-06-24 09:02:59]: 31796 WARNING Before the span
+[2022-06-24 09:02:59]: 31796 WARNING In the span
+[2022-06-24 09:02:59]: 31796 WARNING After the span
+[2022-06-24 09:02:59]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:02:59] "GET / HTTP/1.1" 200 -
+[2022-06-24 09:03:02]: 31796 WARNING Before the span
+[2022-06-24 09:03:02]: 31796 WARNING In the span
+[2022-06-24 09:03:02]: 31796 WARNING After the span
+[2022-06-24 09:03:02]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:03:02] "GET /profile HTTP/1.1" 200 -
+[2022-06-24 09:03:02]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:03:02] "[36mGET /static/css/profil.css HTTP/1.1[0m" 304 -
+[2022-06-24 09:03:12]: 31796 ERROR Unhandled exception from exporter.
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 440, in format
+    return self._format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 436, in _format
+    return self._fmt % values
+KeyError: 'traceId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 154, in run
+    dst._export(batch)
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 77, in _export
+    envelopes = [self.log_record_to_envelope(x) for x in batch]
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 77, in <listcomp>
+    envelopes = [self.log_record_to_envelope(x) for x in batch]
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 239, in log_record_to_envelope
+    message=self.format(record),
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 943, in format
+    return fmt.format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 681, in format
+    s = self.formatMessage(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 650, in formatMessage
+    return self._style.format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 442, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'traceId'
+[2022-06-24 09:03:13]: 31796 DEBUG Starting new HTTPS connection (1): dc.services.visualstudio.com:443
+[2022-06-24 09:03:13]: 31796 DEBUG https://dc.services.visualstudio.com:443 "POST /v2.1/track HTTP/1.1" 307 400
+[2022-06-24 09:03:13]: 31796 DEBUG Starting new HTTPS connection (1): francecentral-1.in.applicationinsights.azure.com:443
+[2022-06-24 09:03:15]: 31796 DEBUG https://francecentral-1.in.applicationinsights.azure.com:443 "POST /v2.1/track HTTP/1.1" 200 49
+[2022-06-24 09:04:13]: 31796 WARNING Before the span
+[2022-06-24 09:04:13]: 31796 WARNING In the span
+[2022-06-24 09:04:13]: 31796 WARNING After the span
+[2022-06-24 09:04:13]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:04:13] "GET /profile HTTP/1.1" 200 -
+[2022-06-24 09:04:13]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:04:13] "[36mGET /static/css/profil.css HTTP/1.1[0m" 304 -
+[2022-06-24 09:04:15]: 31796 DEBUG Starting new HTTPS connection (1): francecentral-1.in.applicationinsights.azure.com:443
+[2022-06-24 09:04:16]: 31796 DEBUG https://francecentral-1.in.applicationinsights.azure.com:443 "POST /v2.1/track HTTP/1.1" 200 49
+[2022-06-24 09:04:20]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:04:20] "[35m[1mGET /list_users HTTP/1.1[0m" 500 -
+[2022-06-24 09:04:20]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:04:20] "GET /list_users?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2022-06-24 09:04:20]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:04:20] "GET /list_users?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2022-06-24 09:04:20]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:04:20] "GET /list_users?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2022-06-24 09:04:20]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:04:20] "[36mGET /list_users?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2022-06-24 09:04:24]: 31796 WARNING Before the span
+[2022-06-24 09:04:24]: 31796 WARNING In the span
+[2022-06-24 09:04:24]: 31796 WARNING After the span
+[2022-06-24 09:04:24]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:04:24] "GET /profile HTTP/1.1" 200 -
+[2022-06-24 09:04:24]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:04:24] "[36mGET /static/css/profil.css HTTP/1.1[0m" 304 -
+[2022-06-24 09:04:27]: 31796 ERROR Unhandled exception from exporter.
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 440, in format
+    return self._format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 436, in _format
+    return self._fmt % values
+KeyError: 'traceId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 154, in run
+    dst._export(batch)
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 77, in _export
+    envelopes = [self.log_record_to_envelope(x) for x in batch]
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 77, in <listcomp>
+    envelopes = [self.log_record_to_envelope(x) for x in batch]
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 239, in log_record_to_envelope
+    message=self.format(record),
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 943, in format
+    return fmt.format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 681, in format
+    s = self.formatMessage(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 650, in formatMessage
+    return self._style.format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 442, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'traceId'
+[2022-06-24 09:04:31]: 31796 DEBUG Starting new HTTPS connection (1): francecentral-1.in.applicationinsights.azure.com:443
+[2022-06-24 09:04:31]: 31796 DEBUG https://francecentral-1.in.applicationinsights.azure.com:443 "POST /v2.1/track HTTP/1.1" 200 49
+[2022-06-24 09:04:34]: 31796 WARNING Before the span
+[2022-06-24 09:04:34]: 31796 WARNING In the span
+[2022-06-24 09:04:34]: 31796 WARNING After the span
+[2022-06-24 09:04:34]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:04:34] "GET /profile HTTP/1.1" 200 -
+[2022-06-24 09:04:34]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:04:34] "[36mGET /static/css/profil.css HTTP/1.1[0m" 304 -
+[2022-06-24 09:04:39]: 31796 DEBUG This is a debug log message
+[2022-06-24 09:04:39]: 31796 INFO This is an information log message
+[2022-06-24 09:04:39]: 31796 WARNING This is a warning log message
+[2022-06-24 09:04:39]: 31796 ERROR This is an error message
+[2022-06-24 09:04:39]: 31796 CRITICAL This is a critical message
+[2022-06-24 09:04:39]: 31796 INFO 127.0.0.1 - - [24/Jun/2022 09:04:39] "GET /coco HTTP/1.1" 200 -
+[2022-06-24 09:04:42]: 31796 ERROR Unhandled exception from exporter.
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 440, in format
+    return self._format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 436, in _format
+    return self._fmt % values
+KeyError: 'traceId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 154, in run
+    dst._export(batch)
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 77, in _export
+    envelopes = [self.log_record_to_envelope(x) for x in batch]
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 77, in <listcomp>
+    envelopes = [self.log_record_to_envelope(x) for x in batch]
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 239, in log_record_to_envelope
+    message=self.format(record),
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 943, in format
+    return fmt.format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 681, in format
+    s = self.formatMessage(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 650, in formatMessage
+    return self._style.format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 442, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'traceId'
+[2022-06-24 09:04:46]: 31796 DEBUG Starting new HTTPS connection (1): francecentral-1.in.applicationinsights.azure.com:443
+[2022-06-24 09:04:47]: 31796 DEBUG https://francecentral-1.in.applicationinsights.azure.com:443 "POST /v2.1/track HTTP/1.1" 200 49
+[2022-06-24 09:10:04]: 31796 INFO  * Detected change in 'c:\\Users\\gsoul\\Documents\\PYTHON\\FLASK\\App\\__init__.py', reloading
+[2022-06-24 09:10:04]: 27476 INFO  * Restarting with stat
+[2022-06-24 09:11:09]: 27476 INFO  * Restarting with stat
+[2022-06-24 09:11:10]: 28812 INFO Starting app in Dev environment
+[2022-06-24 09:11:10]: 28812 WARNING Failed to integrate module: opencensus.ext.logging.trace
+[2022-06-24 09:11:10]: 28812 WARNING No module named 'opencensus.ext.logging'
+[2022-06-24 09:11:10]: 28812 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:11:10]: 28812 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:11:10]: 28812 DEBUG Starting new HTTP connection (1): 169.254.169.254:80
+[2022-06-24 09:11:10]: 28812 DEBUG Starting new HTTPS connection (1): westus-0.in.applicationinsights.azure.com:443
+[2022-06-24 09:11:11]: 28812 DEBUG https://westus-0.in.applicationinsights.azure.com:443 "POST //v2.1/track HTTP/1.1" 200 49
+[2022-06-24 09:11:11]: 28812 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:11:11]: 28812 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:11:11]: 28812 WARNING  * Debugger is active!
+[2022-06-24 09:11:11]: 28812 INFO  * Debugger PIN: 236-355-132
+[2022-06-24 09:11:36]: 28812 WARNING Before the span
+[2022-06-24 09:11:36]: 28812 WARNING In the span
+[2022-06-24 09:11:36]: 28812 WARNING After the span
+[2022-06-24 09:11:36]: 28812 INFO 127.0.0.1 - - [24/Jun/2022 09:11:36] "GET /profile HTTP/1.1" 200 -
+[2022-06-24 09:11:36]: 28812 INFO 127.0.0.1 - - [24/Jun/2022 09:11:36] "[36mGET /static/css/profil.css HTTP/1.1[0m" 304 -
+[2022-06-24 09:11:40]: 28812 ERROR Unhandled exception from exporter.
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 440, in format
+    return self._format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 436, in _format
+    return self._fmt % values
+KeyError: 'traceId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 154, in run
+    dst._export(batch)
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 77, in _export
+    envelopes = [self.log_record_to_envelope(x) for x in batch]
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 77, in <listcomp>
+    envelopes = [self.log_record_to_envelope(x) for x in batch]
+  File "C:\Users\gsoul\Documents\PYTHON\FLASK\myenv\lib\site-packages\opencensus\ext\azure\log_exporter\__init__.py", line 239, in log_record_to_envelope
+    message=self.format(record),
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 943, in format
+    return fmt.format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 681, in format
+    s = self.formatMessage(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 650, in formatMessage
+    return self._style.format(record)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0\lib\logging\__init__.py", line 442, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'traceId'
+[2022-06-24 09:11:41]: 28812 DEBUG Starting new HTTPS connection (1): dc.services.visualstudio.com:443
+[2022-06-24 09:11:41]: 28812 DEBUG https://dc.services.visualstudio.com:443 "POST /v2.1/track HTTP/1.1" 307 224
+[2022-06-24 09:11:41]: 28812 DEBUG Starting new HTTPS connection (1): francecentral-1.in.applicationinsights.azure.com:443
+[2022-06-24 09:11:42]: 28812 DEBUG https://francecentral-1.in.applicationinsights.azure.com:443 "POST /v2.1/track HTTP/1.1" 200 49
+[2022-06-24 09:12:00]: 28812 INFO  * Detected change in 'c:\\Users\\gsoul\\Documents\\PYTHON\\FLASK\\App\\routes\\main.py', reloading
+[2022-06-24 09:12:00]: 27476 INFO  * Restarting with stat
+[2022-06-24 09:12:01]: 27764 INFO Starting app in Dev environment
+[2022-06-24 09:12:01]: 27764 WARNING Failed to integrate module: opencensus.ext.logging.trace
+[2022-06-24 09:12:01]: 27764 WARNING No module named 'opencensus.ext.logging'
+[2022-06-24 09:12:01]: 27764 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:12:01]: 27764 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:12:01]: 27764 DEBUG Starting new HTTP connection (1): 169.254.169.254:80
+[2022-06-24 09:12:01]: 27764 DEBUG Starting new HTTPS connection (1): westus-0.in.applicationinsights.azure.com:443
+[2022-06-24 09:12:02]: 27764 DEBUG https://westus-0.in.applicationinsights.azure.com:443 "POST //v2.1/track HTTP/1.1" 200 49
+[2022-06-24 09:12:02]: 27764 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:12:02]: 27764 WARNING DeprecationWarning: Explicitly using instrumentation key isdeprecated. Please use a connection string instead.
+[2022-06-24 09:12:02]: 27764 WARNING  * Debugger is active!
+[2022-06-24 09:12:02]: 27764 INFO  * Debugger PIN: 236-355-132
