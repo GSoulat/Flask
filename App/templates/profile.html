@@ -4,9 +4,12 @@
 
   <link href="../static/css/profil.css" rel="stylesheet">
   <div class="container mt-5 d-flex justify-content-center">
-
-    <div class="card p-3 border border-dark p-2 mb-2 shadow-lg p-3 mb-5 bg-body rounded">
-
+    {% if current_user.isAdmin==false %}
+    <div class="card p-3 border border-success p-2 mb-2 shadow-lg p-3 mb-5 bg-body rounded">
+    {% endif %}
+    {% if current_user.isAdmin==true %}
+    <div class="card p-3 border border-danger p-2 mb-2 shadow-lg p-3 mb-5 bg-body rounded">
+    {% endif %}
         <div class="d-flex align-items-center">
 
             <div class="image">

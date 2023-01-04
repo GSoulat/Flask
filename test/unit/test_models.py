@@ -8,5 +8,5 @@ def test_new_user():
     user = User('coco@titi.fr', 'a new photo', 'monPasssword', 'MonSurnom')
     assert user.email == 'coco@titi.fr'
     assert user.photo == 'a new photo'
-    assert user.password == 'monPasssword'
-    assert user.name == 'MonSurnom'
+    assert user.password_hash == 'monPasssword'
+    assert user.firstname == 'MonSurnom'

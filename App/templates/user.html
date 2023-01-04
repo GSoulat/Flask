@@ -53,10 +53,10 @@ List des Utilisateurs
         <td>{{ col_name.active }}</td>
 
         {% if col_name.isAdmin==false %}
-        <td><User class="badge text-bg-primary">User</span></td>
+        <td><User class="badge rounded-pill text-bg-primary">User</span></td>
         {% endif %}
         {% if col_name.isAdmin==true %}
-        <td><Admin class="badge text-bg-success">Admin</span></td>
+        <td><Admin class="badge rounded-pill text-bg-success">Admin</span></td>
         {% endif %}
         <td>
           <a href="{{ col_name.id }}" class="btn btn-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">

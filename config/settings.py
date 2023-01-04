@@ -16,6 +16,8 @@ class DevConfig(BaseConfig):
    SECRET_KEY = 'myclefsecret'
    SQLALCHEMY_TRACK_MODIFICATIONS = True
    APPINSIGHTS_INSTRUMENTATIONKEY = os.getenv("APPINSIGHTS_INSTRUMENTATIONKEY")
+   GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
+   GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
 
 
 class ProductionConfig(BaseConfig):
@@ -24,6 +26,8 @@ class ProductionConfig(BaseConfig):
    SQLALCHEMY_TRACK_MODIFICATIONS = False
    SECRET_KEY = 'myclefsecret'
    APPINSIGHTS_INSTRUMENTATIONKEY = os.getenv("APPINSIGHTS_INSTRUMENTATIONKEY")
+   GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
+   GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
 
 class TestConfig(BaseConfig):
    FLASK_ENV = 'development'
