@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template
 from flask_login import login_required, current_user
 from App.models.user import User
-from App import db, logger, tracer
+from App import db
 from App.utils import admin_required
 
 main = Blueprint('main',__name__, static_folder='/App/static', template_folder='App/templates')
