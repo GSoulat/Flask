@@ -10,20 +10,20 @@ main = Blueprint('main',__name__, static_folder='/App/static', template_folder='
 
 @main.route('/')
 def index():
-    logger.warning('Before the span')
-    with tracer.span(name='test'):
-        logger.warning('In the span')
-    logger.warning('After the span')
+    # logger.warning('Before the span')
+    # with tracer.span(name='test'):
+    #     logger.warning('In the span')
+    # logger.warning('After the span')
     return render_template('index.html')
 
 
 @main.route('/profile')
 @login_required
 def profile():
-    logger.warning('Before the span')
-    with tracer.span(name='test'):
-        logger.warning('In the span')
-    logger.warning('After the span')    
+    # logger.warning('Before the span')
+    # with tracer.span(name='test'):
+    #     logger.warning('In the span')
+    # logger.warning('After the span')    
     return render_template('profile.html', profil=current_user)
 
 
@@ -34,10 +34,10 @@ def list_users():
     print(current_user.isAdmin)
     list_user = db.session.query(User).all()
     print(list_user)
-    logger.warning('Before the span')
-    with tracer.span(name='test'):
-        logger.warning('In the span')
-    logger.warning('After the span')
+    # logger.warning('Before the span')
+    # with tracer.span(name='test'):
+    #     logger.warning('In the span')
+    # logger.warning('After the span')
     return render_template('list_users.html', name=list_user)
 
 

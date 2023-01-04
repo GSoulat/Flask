@@ -14,29 +14,29 @@ from logging import StreamHandler
 import os
 from applicationinsights.flask.ext import AppInsights
 import logging as lg
-from opencensus.ext.azure.log_exporter import AzureLogHandler
-from opencensus.ext.azure.trace_exporter import AzureExporter
-from opencensus.trace import config_integration
-from opencensus.trace.samplers import ProbabilitySampler
-from opencensus.trace.tracer import Tracer
-import pathlib
+# from opencensus.ext.azure.log_exporter import AzureLogHandler
+# from opencensus.ext.azure.trace_exporter import AzureExporter
+# from opencensus.trace import config_integration
+# from opencensus.trace.samplers import ProbabilitySampler
+# from opencensus.trace.tracer import Tracer
+# import pathlib
 
 lg.basicConfig(level=lg.DEBUG,
                    format='[%(asctime)s]: {} %(levelname)s %(message)s'.format(os.getpid()),
                    datefmt='%Y-%m-%d %H:%M:%S',
                    handlers=[lg.StreamHandler(), lg.FileHandler(filename='error.log')])
 
-config_integration.trace_integrations(['logging'])
+# config_integration.trace_integrations(['logging'])
 logger = lg.getLogger(__name__)
 
-handler = AzureLogHandler(connection_string='InstrumentationKey=' + os.getenv('APPINSIGHTS_INSTRUMENTATIONKEY'))
-handler.setFormatter(lg.Formatter('%(spanId)s %(message)s'))
-logger.addHandler(handler)
+# handler = AzureLogHandler(connection_string='InstrumentationKey=' + os.getenv('APPINSIGHTS_INSTRUMENTATIONKEY'))
+# handler.setFormatter(lg.Formatter('%(spanId)s %(message)s'))
+# logger.addHandler(handler)
 
-tracer = Tracer(
-    exporter=AzureExporter(connection_string='InstrumentationKey='+ os.getenv('APPINSIGHTS_INSTRUMENTATIONKEY')),
-    sampler=ProbabilitySampler(1.0)
-)
+# tracer = Tracer(
+#     exporter=AzureExporter(connection_string='InstrumentationKey='+ os.getenv('APPINSIGHTS_INSTRUMENTATIONKEY')),
+#     sampler=ProbabilitySampler(1.0)
+# )
 
 db = SQLAlchemy()
 login_manager = LoginManager()
@@ -102,34 +102,34 @@ app = create_app()
 # db.create_all(app=create_app())
 # lg.warning('Database created successfully')
 
-appinsights = AppInsights(app)
+# appinsights = AppInsights(app)
 
-@app.after_request
-def after_request(response):
-    appinsights.flush()
-    return response
+# @app.after_request
+# def after_request(response):
+#     appinsights.flush()
+#     return response
 
-# keep stdout/stderr logging using StreamHandler
-streamHandler = StreamHandler()
-app.logger.addHandler(streamHandler)
-# after Application Insights configuration
+# # keep stdout/stderr logging using StreamHandler
+# streamHandler = StreamHandler()
+# app.logger.addHandler(streamHandler)
+# # after Application Insights configuration
 
-# keep stdout/stderr logging using StreamHandler
-streamHandler = StreamHandler()
-app.logger.addHandler(streamHandler)
+# # keep stdout/stderr logging using StreamHandler
+# streamHandler = StreamHandler()
+# app.logger.addHandler(streamHandler)
 
-# define log level to DEBUG
-app.logger.setLevel(lg.WARN)
+# # define log level to DEBUG
+# app.logger.setLevel(lg.WARN)
 
-# apply same formatter on all log handlers
-for logHandler in app.logger.handlers:
-  logHandler.setFormatter(lg.Formatter('[FLASK-LOG][%(levelname)s]%(message)s'))
+# # apply same formatter on all log handlers
+# for logHandler in app.logger.handlers:
+#   logHandler.setFormatter(lg.Formatter('[FLASK-LOG][%(levelname)s]%(message)s'))
   
-@app.route("/coco")
-def hello():
-    app.logger.debug('This is a debug log message')
-    app.logger.info('This is an information log message')
-    app.logger.warn('This is a warning log message')
-    app.logger.error('This is an error message')
-    app.logger.critical('This is a critical message')
-    return "Hello World!"
+# @app.route("/coco")
+# def hello():
+#     app.logger.debug('This is a debug log message')
+#     app.logger.info('This is an information log message')
+#     app.logger.warn('This is a warning log message')
+#     app.logger.error('This is an error message')
+#     app.logger.critical('This is a critical message')
+#     return "Hello World!"
