@@ -1,9 +1,9 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
-from google.oauth2 import id_token
-from google_auth_oauthlib.flow import Flow
-import google.auth.transport.requests
+# from google.oauth2 import id_token
+# from google_auth_oauthlib.flow import Flow
+# import google.auth.transport.requests
 import os
 from datetime import timedelta
 from config import config
@@ -41,15 +41,15 @@ tracer = Tracer(
 db = SQLAlchemy()
 login_manager = LoginManager()
 
-GOOGLE_CLIENT_ID = "54816233296-p388b2tfmotc18r9166t06umnmmbaua9.apps.googleusercontent.com"
-client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret.json")
+# GOOGLE_CLIENT_ID = "54816233296-p388b2tfmotc18r9166t06umnmmbaua9.apps.googleusercontent.com"
+# client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret.json")
 
-flow = Flow.from_client_secrets_file(
-    client_secrets_file=client_secrets_file,
-    scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email", "openid"],
-    redirect_uri="http://127.0.0.1:8000/callback"
-)
-os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
+# flow = Flow.from_client_secrets_file(
+#     client_secrets_file=client_secrets_file,
+#     scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email", "openid"],
+#     redirect_uri="http://127.0.0.1:8000/callback"
+# )
+# os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
 
 def create_app():
