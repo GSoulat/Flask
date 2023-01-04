@@ -3,7 +3,7 @@ from flask import Blueprint, redirect, render_template, session, url_for, reques
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, logout_user, login_required, current_user
 from App.models.user import User
-from App import db, login_manager, logger, tracer, flow, GOOGLE_CLIENT_ID
+from App import db, login_manager
 import re, os
 # from google_auth_oauthlib.flow import Flow
 # from pip._vendor import cachecontrol
@@ -89,7 +89,6 @@ def login():
         else:
             flash('Email is not a email adress.')
             return render_template('login.html')
-        
         
         print(user.password_hash)
         print(password)
