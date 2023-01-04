@@ -5,10 +5,10 @@ from flask_login import login_user, logout_user, login_required, current_user
 from App.models.user import User
 from App import db, login_manager, logger, tracer, flow, GOOGLE_CLIENT_ID
 import re, os
-from google_auth_oauthlib.flow import Flow
+# from google_auth_oauthlib.flow import Flow
 from pip._vendor import cachecontrol
-from google.oauth2 import id_token
-import google.auth.transport.requests
+# from google.oauth2 import id_token
+# import google.auth.transport.requests
 import requests
 # import cloudinary.uploader
 
@@ -20,13 +20,13 @@ auth = Blueprint('auth', __name__, static_folder='/App/static', template_folder=
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 
 
-os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
+# os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
-@auth.route('/googlelogin')
-def googlelogin():
-    authorization_url, state = flow.authorization_url()
-    session["state"] = state
-    return redirect(authorization_url)
+# @auth.route('/googlelogin')
+# def googlelogin():
+#     authorization_url, state = flow.authorization_url()
+#     session["state"] = state
+#     return redirect(authorization_url)
 
 # @auth.route('/authorize/google')
 # def google_authorize():
@@ -40,30 +40,30 @@ def googlelogin():
 #     return redirect('/profile')
 
 
-@auth.route("/callback")
-def callback():
-    flow.fetch_token(authorization_response=request.url)
+# @auth.route("/callback")
+# def callback():
+#     flow.fetch_token(authorization_response=request.url)
 
-    if not session["state"] == request.args["state"]:
-        abort(500)  # State does not match!
+#     if not session["state"] == request.args["state"]:
+#         abort(500)  # State does not match!
 
-    credentials = flow.credentials
-    request_session = requests.session()
-    cached_session = cachecontrol.CacheControl(request_session)
-    token_request = google.auth.transport.requests.Request(session=cached_session)
+#     credentials = flow.credentials
+#     request_session = requests.session()
+#     cached_session = cachecontrol.CacheControl(request_session)
+#     token_request = google.auth.transport.requests.Request(session=cached_session)
 
-    id_info = id_token.verify_oauth2_token(
-        id_token=credentials._id_token,
-        request=token_request,
-        audience=GOOGLE_CLIENT_ID
-    )
+#     id_info = id_token.verify_oauth2_token(
+#         id_token=credentials._id_token,
+#         request=token_request,
+#         audience=GOOGLE_CLIENT_ID
+#     )
 
-    session["google_id"] = id_info.get("sub")
-    session["name"] = id_info.get("name")
-    user = User.query.filter_by(email=id_info.get("email")).first()
-    login_user(user)
+#     session["google_id"] = id_info.get("sub")
+#     session["name"] = id_info.get("name")
+#     user = User.query.filter_by(email=id_info.get("email")).first()
+#     login_user(user)
     
-    return redirect(url_for("main.profile"))
+#     return redirect(url_for("main.profile"))
 
 @auth.route('/login',  methods=["GET", "POST"])
 def login():
