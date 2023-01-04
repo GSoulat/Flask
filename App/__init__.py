@@ -10,7 +10,7 @@ from config import config
 # from flask_mail import Mail
 # import cloudinary
 import psycopg2
-from logging import StreamHandler
+# from logging import StreamHandler
 import os
 # from applicationinsights.flask.ext import AppInsights
 # import logging as lg
