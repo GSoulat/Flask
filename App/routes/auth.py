@@ -6,10 +6,10 @@ from App.models.user import User
 from App import db, login_manager, logger, tracer, flow, GOOGLE_CLIENT_ID
 import re, os
 # from google_auth_oauthlib.flow import Flow
-from pip._vendor import cachecontrol
+# from pip._vendor import cachecontrol
 # from google.oauth2 import id_token
 # import google.auth.transport.requests
-import requests
+# import requests
 # import cloudinary.uploader
 
 
@@ -108,10 +108,10 @@ def signup():
     GET requests serve sign-up page.
     POST requests validate form & user creation.
     """
-    logger.warning('Before the span')
-    with tracer.span(name='test'):
-        logger.warning('In the span')
-    logger.warning('After the span')
+    # logger.warning('Before the span')
+    # with tracer.span(name='test'):
+    #     logger.warning('In the span')
+    # logger.warning('After the span')
         # Bypass if user is logged in
     if current_user.is_authenticated:
         return redirect(url_for("main.profile"))

@@ -12,8 +12,8 @@ from config import config
 import psycopg2
 from logging import StreamHandler
 import os
-from applicationinsights.flask.ext import AppInsights
-import logging as lg
+# from applicationinsights.flask.ext import AppInsights
+# import logging as lg
 # from opencensus.ext.azure.log_exporter import AzureLogHandler
 # from opencensus.ext.azure.trace_exporter import AzureExporter
 # from opencensus.trace import config_integration
@@ -21,13 +21,13 @@ import logging as lg
 # from opencensus.trace.tracer import Tracer
 # import pathlib
 
-lg.basicConfig(level=lg.DEBUG,
-                   format='[%(asctime)s]: {} %(levelname)s %(message)s'.format(os.getpid()),
-                   datefmt='%Y-%m-%d %H:%M:%S',
-                   handlers=[lg.StreamHandler(), lg.FileHandler(filename='error.log')])
+# lg.basicConfig(level=lg.DEBUG,
+#                    format='[%(asctime)s]: {} %(levelname)s %(message)s'.format(os.getpid()),
+#                    datefmt='%Y-%m-%d %H:%M:%S',
+#                    handlers=[lg.StreamHandler(), lg.FileHandler(filename='error.log')])
 
-# config_integration.trace_integrations(['logging'])
-logger = lg.getLogger(__name__)
+# # config_integration.trace_integrations(['logging'])
+# logger = lg.getLogger(__name__)
 
 # handler = AzureLogHandler(connection_string='InstrumentationKey=' + os.getenv('APPINSIGHTS_INSTRUMENTATIONKEY'))
 # handler.setFormatter(lg.Formatter('%(spanId)s %(message)s'))
@@ -53,10 +53,10 @@ login_manager = LoginManager()
 
 
 def create_app():
-    logger.info(f'Starting app in {config.APP_ENV} environment')
+    # logger.info(f'Starting app in {config.APP_ENV} environment')
     app = Flask(__name__)
     app.config.from_object('config')
-    app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
+    # app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
     db.init_app(app)
     
     
